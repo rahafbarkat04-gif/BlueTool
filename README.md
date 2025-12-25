@@ -9,85 +9,83 @@ This repository contains documentation and usage notes, while the virtual machin
 
 **Purpose**
 
-Provide a ready-made Blue Team workstation
+* Provide a ready-made Blue Team workstation
 
-Centralize essential DFIR and SOC tools in one VM
+* Centralize essential DFIR and SOC tools in one VM
 
-Reduce setup and configuration time
+* Reduce setup and configuration time
 
-Support learning, practice, and professional analysis
+* Support learning, practice, and professional analysis
 
 **Virtual Machine**
 
-Platform: VMware Workstation / Player
+* Platform: VMware Workstation / Player
 
-Format: OVA
+* Format: OVA
 
-Operating System: Windows
+* Operating System: Windows
 
-Download:
-(Add your Google Drive / Mega link here)
+* Download: (Add your Google Drive / Mega link here)
 
-Import Instructions
-VMware → File → Open → Select OVA file
+* Import Instructions
+    * VMware → File → Open → Select OVA file
 
 ## Included Tools & Usage
 **Endpoint & Host Analysis**
 
-Velociraptor – Endpoint investigation, live response, and artifact collection.
+* Velociraptor – Endpoint investigation, live response, and artifact collection.
 
-Sysmon – Advanced Windows event logging for detection and hunting.
+* Sysmon – Advanced Windows event logging for detection and hunting.
 
-Sysinternals Suite – Process, service, persistence, and system activity analysis.
+* Sysinternals Suite – Process, service, persistence, and system activity analysis.
 
-Forensics & Incident Response
+* Forensics & Incident Response
 
-Volatility – Memory forensics and malware artifact detection.
+* Volatility – Memory forensics and malware artifact detection.
 
-FTK – Disk forensics and evidence analysis.
+* FTK – Disk forensics and evidence analysis.
 
-Autopsy – File system, timeline, and artifact analysis.
+* Autopsy – File system, timeline, and artifact analysis.
 
-KAPE – Rapid evidence collection and processing.
+* KAPE – Rapid evidence collection and processing.
 
-Eric Zimmerman Tools – Analysis of Windows artifacts (registry, event logs, prefetch, etc.).
+* Eric Zimmerman Tools – Analysis of Windows artifacts (registry, event logs, prefetch, etc.).
 
-RedLine – IOC detection and memory analysis.
+* RedLine – IOC detection and memory analysis.
 
-Network Security & Traffic Analysis
+* Network Security & Traffic Analysis
 
-Wireshark – Deep packet inspection and traffic analysis.
+* Wireshark – Deep packet inspection and traffic analysis.
 
-NetworkMiner – Network artifact extraction and session analysis.
+* NetworkMiner – Network artifact extraction and session analysis.
 
-Suricata – Network-based intrusion detection.
+* Suricata – Network-based intrusion detection.
 
 **Malware Analysis**
 
-Ghidra – Reverse engineering and static malware analysis.
+* Ghidra – Reverse engineering and static malware analysis.
 
-PEStudio – Quick static PE file inspection.
+* PEStudio – Quick static PE file inspection.
 
-Detect It Easy (DIE) – File signature and packer detection.
+* Detect It Easy (DIE) – File signature and packer detection.
 
-x64dbg – Dynamic malware debugging.
+* x64dbg – Dynamic malware debugging.
 
 **Detection Engineering & Validation**
 
-YARA – Pattern-based malware and artifact detection.
+* YARA – Pattern-based malware and artifact detection.
 
-Sigma – SIEM-agnostic detection rules.
+* Sigma – SIEM-agnostic detection rules.
 
-ELK Stack – Log aggregation, analysis, and visualization.
+* ELK Stack – Log aggregation, analysis, and visualization.
 
-Chainsaw – Fast Sigma-based Windows event log hunting.
+* Chainsaw – Fast Sigma-based Windows event log hunting.
 
-Atomic Red Team – Detection validation through adversary technique simulation.
+* Atomic Red Team – Detection validation through adversary technique simulation.
 
 
 ## Default Credentials
 
-The virtual machine is provided with a default local user account for initial access.
-
-Password: 159753
+* The virtual machine is provided with a default local user account for initial access.
+  * Password: 159753
 
