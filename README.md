@@ -8,6 +8,7 @@ The goal of this project is to save setup time by offering a machine with common
 This repository contains documentation and usage notes, while the virtual machine itself is distributed separately as an OVA appliance.
 
 **Purpose**
+
 Provide a ready-made Blue Team workstation
 
 Centralize essential DFIR and SOC tools in one VM
@@ -17,6 +18,7 @@ Reduce setup and configuration time
 Support learning, practice, and professional analysis
 
 **Virtual Machine**
+
 Platform: VMware Workstation / Player
 
 Format: OVA
@@ -31,6 +33,7 @@ VMware → File → Open → Select OVA file
 
 ## Included Tools & Usage
 **Endpoint & Host Analysis**
+
 Velociraptor – Endpoint investigation, live response, and artifact collection.
 
 Sysmon – Advanced Windows event logging for detection and hunting.
@@ -60,6 +63,7 @@ NetworkMiner – Network artifact extraction and session analysis.
 Suricata – Network-based intrusion detection.
 
 **Malware Analysis**
+
 Ghidra – Reverse engineering and static malware analysis.
 
 PEStudio – Quick static PE file inspection.
@@ -69,6 +73,7 @@ Detect It Easy (DIE) – File signature and packer detection.
 x64dbg – Dynamic malware debugging.
 
 **Detection Engineering & Validation**
+
 YARA – Pattern-based malware and artifact detection.
 
 Sigma – SIEM-agnostic detection rules.
