@@ -39,7 +39,7 @@ This repository contains documentation and usage notes, while the virtual machin
 
 * Sysinternals Suite – Process, service, persistence, and system activity analysis.
 
-* Forensics & Incident Response
+**Forensics & Incident Response**
 
 * Volatility – Memory forensics and malware artifact detection.
 
