@@ -25,7 +25,7 @@ This repository contains documentation and usage notes, while the virtual machin
 
 * Operating System: Windows
 
-* Download: https://bauniversity-my.sharepoint.com/:u:/g/personal/32309257012_std_bau_edu_jo/IQBAnwZ5HKPrQKSA8RZfl4qMATbDQhMVMBN9uRnH1A6Ncfg?e=5QR5GF
+* Download: https://mega.nz/file/a4J2lIBQ#9A0RA5zYUTbGCZJ7BXZE_w16lJfbJe7HIZXa56j79wA
 
 * Import Instructions
     * VMware → File → Open → Select OVA file
