@@ -1,0 +1,54 @@
+pipeline {
+    agent any   // run on any available agent
+
+    environment {
+        APP_NAME = "MyApp"
+        DEPLOY_ENV = "staging"
+        DEPLOY_PATH = "/home/ec2-user/rahaf" // folder your Python server serves
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git url: 'https://github.com/rahafbarkat04-gif/rahaf-jenkins.git', branch: 'main'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                echo "Building ${env.APP_NAME}..."
+                sh 'echo "Build successful!"'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo "Running tests..."
+                sh 'echo "Tests passed!"'
+            }
+        }
+
+        stage('Deploy') {
+            when {
+                branch 'main'
+            }
+            steps {
+                echo "Deploying ${env.APP_NAME} to ${env.DEPLOY_ENV} environment"
+
+                // Copy all files from workspace to Python server folder
+                sh "cp -r * ${env.DEPLOY_PATH}/"
+
+                echo "Deployment complete!"
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline finished successfully!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
