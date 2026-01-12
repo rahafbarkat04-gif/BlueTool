@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+    environment {
+        DEPLOY_PATH = "/home/ec2-user/rahaf"
+    }
+    stages {
+        stage('Pull Git') {
+            steps {
+                git branch: 'main', url: 'https://github.com/username/repo.git'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Stop old Python server if running
+                sh "pkill -f 'python3 -m http.server 8081' || true"
+                
+                // Copy latest files to your folder
+                sh "cp -r * ${env.DEPLOY_PATH}/"
+                
+                // Start Python server in your folder
+                sh "cd ${env.DEPLOY_PATH} && nohup python3 -m http.server 8081 &"
+            }
+        }
+    }
+}
+
